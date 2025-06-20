@@ -1,0 +1,62 @@
+const inputForm = document.querySelector("#busca")
+
+const inputForm2 = document.querySelector("#pesquisar")
+
+const botaoBusca = document.querySelector("#botaoBusca")
+
+const botaoPesquisar = document.querySelector("#botaoPesquisar")
+
+const resultadoDiv = document.querySelector("#resultado")
+
+const resultadoDiv2 = document.querySelector("#resultado2")
+
+inputForm.addEventListener("keydown", (e)=>{
+    console.log(e.key)
+})
+
+inputForm2.addEventListener("keydown", (e)=>{
+    console.log(e.key)
+})
+
+inputForm.addEventListener("focus", (e)=>{
+    inputForm.style.backgroundColor = "#FF0"
+})
+
+inputForm2.addEventListener("focus", (e)=>{
+    inputForm2.style.backgroundColor = "#0F0"
+})
+
+inputForm.addEventListener("blur", (e)=>{
+    inputForm.style.backgroundColor = ""
+})
+
+inputForm2.addEventListener("blur", (e)=>{
+    inputForm2.style.backgroundColor = ""
+})
+
+function searchResult(){
+    const valorBusca = inputForm.value.trim()
+    if(valorBusca){
+        resultadoDiv.textContent = `Você buscou: ${valorBusca}`
+    } else {
+        resultadoDiv.textContent = "Por favor, insira algo na busca."
+    }
+}
+
+function searchResult2(){
+    const valorBusca2 = inputForm2.value.trim()
+    if(valorBusca2){
+        resultadoDiv2.textContent = `Você buscou: ${valorBusca2}`
+    } else {
+        resultadoDiv2.textContent = "Por favor, pesquise algo."
+    }
+}
+
+botaoBusca.addEventListener("click", (e) => {
+    searchResult()
+})
+
+botaoPesquisar.addEventListener("click", (e) => {
+    searchResult2()
+})
+
