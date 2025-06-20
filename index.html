@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <title>Eventos - Formulário</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+
+    <form id="formBusca">
+        <label>Nome:</label>
+        <input type="text" name="busca" id="busca" placeholder="Digite seu nome...">
+        <button class="btn btn-outline-primary" type="button" id="botaoBusca">Buscar</button>
+    </form>
+
+    <form id="formPesquisar">
+        <label>Curso:</label>
+        <input type="text" name="pesquisar" id="pesquisar" placeholder="Digite seu curso...">
+        <button class="btn btn-outline-secondary" type="button" id="botaoPesquisar">Pesquisar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <div id="resultado2"></div>
+
+    <h2>Curso graduação de Inteligência artificial. Onde aprimoro minhas habilidades em:</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              HTML
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             Pense no HTML como o esqueleto de uma página da internet. Assim como um esqueleto dá forma e estrutura ao nosso corpo, o HTML dá forma e estrutura ao conteúdo que você vê em um site. <code>Ele não é uma linguagem de programação no sentido tradicional (não consegue realizar cálculos complexos ou tomar decisões), mas é uma linguagem de marcação.</code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              CSS
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            Explicando de maneira bem simples, se o HTML é o esqueleto da sua página web, então o CSS é a pele, as roupas, a maquiagem e os acessórios. <code>Ele é o responsável por toda a parte visual e design da página.</code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              JavaScript
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            o JavaScript (JS) é o cérebro e os músculos que dão vida à sua página web. Ele é a linguagem que torna as páginas interativas e dinâmicas. JavaScript é uma linguagem de programação completa que permite implementar funcionalidades complexas em páginas web.<code> Enquanto HTML estrutura e CSS estiliza, o JavaScript adiciona comportamento à sua página.</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>O que é Desenvolvimento Front-End?</h2>
+      <div class="alert alert-danger">
+        Desenvolvimento Front-End é a área da programação que se dedica a criar e dar vida à parte de um site ou aplicativo com a qual o usuário interage diretamente. É tudo aquilo que você vê e manipula na tela do seu computador ou celular: os botões, os menus, os textos, as imagens, os formulários e até as animações.
+      </div>
+    </div>
+
+    <h2>O desenvolvedor Front-End deve garantir que a interface do usuário seja:</h2>
+
+    <div class="card" style="width: 18rem;">
+        <img src="css/computer_2.jpg" class="card-img-top" alt="computer_2">
+        <div class="card-body">
+          <h5 class="card-title">Funcional, intuitiva, Responsiva...</h5>
+          <p class="card-text">Esteticamente Agradável: Que tenha um bom design, seja visualmente atraente.</p>
+          <p>Acessível: Que possa ser usada por pessoas com diferentes necessidades.</p>
+          <a href="#" class="btn btn-primary">Sou entusiasta por Front-End</a>
+        </div>
+      </div>    
+      
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Clique aqui para ver a frase chave
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        O arrependimento pode ser mais assustador do que o ato de uma grande mudança. Arrisque!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
